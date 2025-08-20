@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #fbd3e9, #bb377d);
+  color: #333;
+  background-image: url('https://images.unsplash.com/photo-1589820296151-d914c0e8f4f6');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+header, footer {
+  padding: 20px;
+  background: rgba(255, 182, 193, 0.8);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.theme-section, .quiz-section, .api-section {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1, h2 {
+  color: #b45f06;
+}
+
+button {
+  margin: 8px;
+  padding: 12px 18px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background: #f06292;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ec407a;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  button { width: 90%; }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  body { font-size: 18px; }
+}
+
+@media (min-width: 993px) {
+  body { font-size: 20px; }
+}

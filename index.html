@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Themed Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to the Fun Quiz! 🎉</h1>
+    <p>Choose your favorite theme and test your knowledge!</p>
+  </header>
+
+  <main>
+    <section class="theme-section">
+      <h2>Pick a Theme</h2>
+      <button onclick="startQuiz('sports')">🏀 Sports</button>
+      <button onclick="startQuiz('traditions')">🎎 Traditions</button>
+      <button onclick="startQuiz('movies')">🎬 Movies</button>
+      <button onclick="startQuiz('food')">🍕 Food</button>
+    </section>
+
+    <section class="quiz-section" id="quiz-section" style="display:none;">
+      <h2 id="quiz-title"></h2>
+      <div id="quiz"></div>
+      <button id="submit-quiz">✅ Submit Quiz</button>
+      <p id="final-score" style="font-weight:bold; font-size:1.2em;"></p>
+      <p id="final-message" style="font-weight:bold; font-size:1.2em;"></p>
+      <button onclick="resetQuiz()">🔄 Choose Another Theme</button>
+    </section>
+
+    <section class="api-section">
+      <h2>😂 Need a Laugh?</h2>
+      <button onclick="getJoke()">Get Random Joke</button>
+      <p id="joke"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fun Quiz Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
